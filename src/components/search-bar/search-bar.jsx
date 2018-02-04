@@ -41,6 +41,7 @@ const searchBarStyle = cxs({
 });
 
 
+// Component of the research and favorite albums pages
 export default class SearchBar extends Component {
 
   constructor(props) {
@@ -56,6 +57,7 @@ export default class SearchBar extends Component {
     }
   }
 
+  // handle when the user enter a text in the input search bar to filter the results
   handleChange(event) {
     const searchValue = event.target.value;
 

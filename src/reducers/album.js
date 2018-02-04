@@ -5,6 +5,7 @@ import {
   RECEIVE_ALBUMS,
   GET_LAST_SEARCH_VALUE} from '../actions';
 
+// Reducers managing albums data
 export function albums(state = {}, action) {
   const newState =_.merge(state, {
     isFetching: false,

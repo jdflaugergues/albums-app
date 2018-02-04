@@ -1,7 +1,7 @@
 import fetch from 'cross-fetch';
 import _ from 'lodash';
 
-
+// Action to add an new album in favorites
 export const ADD_FAVORITE = 'ADD_FAVORITE';
 function addFavorite(album) {
   return {
@@ -10,6 +10,7 @@ function addFavorite(album) {
   }
 }
 
+// Action to remove album from favorites
 export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
 function removeFavorite(album) {
   return {
@@ -18,6 +19,7 @@ function removeFavorite(album) {
   }
 }
 
+// Action to receive the list of favorite albums
 export const RECEIVE_FAVORITE_ALBUMS = 'RECEIVE_FAVORITE_ALBUMS';
 function receiveFavoriteAlbums({results}) {
   return {
@@ -26,6 +28,7 @@ function receiveFavoriteAlbums({results}) {
   }
 }
 
+// Action to get the last favorite albums filter
 export const GET_LAST_FAVORITE_SEARCH_VALUE = 'GET_LAST_FAVORITE_SEARCH_VALUE';
 function getLastFavoriteSearchValue(lastSearchValue) {
   return {
@@ -58,7 +61,7 @@ export function addToFavorites(album) {
   }
 }
 
-// remove an album to the user favorite albums list
+// remove an album from the user favorite albums list
 export function removeFromFavorites(album) {
   return dispatch => {
     const favoriteAlbums = JSON.parse(window.localStorage.favoriteAlbums || '[]');

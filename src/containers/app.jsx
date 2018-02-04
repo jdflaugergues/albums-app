@@ -10,6 +10,7 @@ import {NavBar} from '../components/nav-bar';
 
 import {fetchAlbums, fetchFavoriteAlbums, findFavoriteAlbums, addToFavorites, removeFromFavorites} from '../actions';
 
+// Component Layout which wrap the application and initialize list of albums and favorites
 class Layout extends Component {
 
   componentWillMount() {
@@ -27,6 +28,7 @@ class Layout extends Component {
   }
 }
 
+// Main component of the application
 class App extends Component {
 
   render() {

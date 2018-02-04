@@ -1,3 +1,5 @@
+// Common theme used by application components
+
 export const colors = {
   primaryColor: '#fff',
   secondaryColor: '#aaa',

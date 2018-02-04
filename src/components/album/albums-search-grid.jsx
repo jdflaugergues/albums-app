@@ -29,6 +29,7 @@ const titleResultStyle = cxs({
   }
 });
 
+// Component of a list of albums
 export default class AlbumsSearchGrid extends Component {
 
   render() {

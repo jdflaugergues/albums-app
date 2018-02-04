@@ -7,10 +7,10 @@ import App from './containers/app';
 
 import './index.css';
 
-
+// Initialization of the redux store
 const store = configureStore();
 
-
+// Render the application
 ReactDOM.render(
   <App store={store}/>,
   document.querySelector('#root')

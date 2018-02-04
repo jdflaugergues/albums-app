@@ -12,6 +12,7 @@ function toSearchFormat(str) {
   return str.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
+// Reducer managing favorite albums data
 export function favoriteAlbums(state = {}, action) {
 
   const newState =_.merge(state, {

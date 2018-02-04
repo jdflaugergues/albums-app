@@ -1,5 +1,6 @@
 import fetch from 'cross-fetch';
 
+// Action on request albums
 export const REQUEST_ALBUMS = 'REQUEST_ALBUMS';
 function requestAlbums(filter) {
   return {
@@ -8,6 +9,7 @@ function requestAlbums(filter) {
   }
 }
 
+// Action on receive albums
 export const RECEIVE_ALBUMS = 'RECEIVE_ALBUMS';
 function receiveAlbums(filter, {results}) {
   return {
@@ -18,6 +20,7 @@ function receiveAlbums(filter, {results}) {
   }
 }
 
+// Action on get the last search value
 export const GET_LAST_SEARCH_VALUE = 'GET_LAST_SEARCH_VALUE';
 function getLastSearchValue(lastSearchValue) {
   return {

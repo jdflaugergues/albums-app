@@ -65,7 +65,7 @@ const favoriteBtnStyle = {
   userSelect: 'none'
 };
 
-
+// Component of an album of a list
 export default class Album extends Component {
 
   constructor(props) {

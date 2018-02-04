@@ -20,6 +20,7 @@ const emptyFavoriteStyle = cxs({
   }
 });
 
+// Component of a empty list of favorite albums
 class EmptyFavorite extends Component {
 
   render() {

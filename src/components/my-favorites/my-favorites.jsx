@@ -5,6 +5,7 @@ import _ from 'lodash';
 import {MainContent} from '../main-content';
 import {EmptyFavorite} from '.';
 
+// Components of the favorite albums page
 class MyFavorites extends Component {
 
   constructor(props) {

@@ -19,6 +19,7 @@ const emptyResultStyle = cxs({
   }
 });
 
+// Component of the empty albums result
 class EmptyResult extends Component {
 
   render() {

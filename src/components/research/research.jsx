@@ -6,6 +6,7 @@ import _ from 'lodash';
 import {MainContent} from '../main-content';
 import {EmptyResult} from '.';
 
+// Component of the album research page
 class Research extends Component {
 
   constructor(props) {

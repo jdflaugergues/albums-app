@@ -4,6 +4,7 @@ import cxs from 'cxs';
 
 import {colors, font} from '../../common/theme';
 
+// List of menu available in the application
 const navBarItems = [
   {title: 'Research', path: '/research'},
   {title: 'My favorites', path: '/my-favorites'}
@@ -56,6 +57,7 @@ const navBarStyle = cxs({
   }
 });
 
+// Component of the navigation bar
 const NavBar = () => {
 
   return (
