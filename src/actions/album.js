@@ -44,10 +44,10 @@ export function fetchAlbums(filter) {
   return dispatch => {
     if (filter === undefined) {
       filter = getLocaleStorageSearchValue();
-      dispatch(getLastSearchValue(filter));
     } else {
       saveLastSearch(filter);
     }
+    dispatch(getLastSearchValue(filter));
 
     // If no filter, no need to request because of no results from itunes on empty term param
     if (!filter) {

@@ -46,15 +46,14 @@ export default class SearchBar extends Component {
 
   constructor(props) {
     super(props);
-
-    this.state = {searchValue: ''};
+    this.state = {
+      searchValue: ''
+    };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (!this.state.searchValue) {
-      this.setState({searchValue: nextProps.searchValue});
-    }
+  componentWillMount() {
+    this.setState({searchValue: this.props.searchValue});
   }
 
   // handle when the user enter a text in the input search bar to filter the results
@@ -66,12 +65,14 @@ export default class SearchBar extends Component {
   }
 
   render() {
+
     return (
       <div className={searchBarStyle}>
         <h4>Research an album by artist.</h4>
         <input
           onChange={this.handleChange}
           type='text'
+          name='searchValue'
           value={this.state.searchValue}
           placeholder='Start typing...'>
         </input>
